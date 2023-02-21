@@ -19,6 +19,8 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', [PostController::class, 'showPost']);
 
+Route::get('/profile/{user_id}', [UserController::class, 'showUser']);
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

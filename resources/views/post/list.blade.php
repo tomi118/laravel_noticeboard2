@@ -15,7 +15,7 @@
     <?php else : ?>
         <img src="defaultUserImg.jpeg" alt="userIcon" class="profilePageImage">
     <?php endif; ?>
-    <a href="user_id/<?= $post['user_id'] ?>">投稿者: {{ $post['username'] }}</a>
+    <a href="profile/<?= $post['user_id'] ?>">投稿者: {{ $post['username'] }}</a>
     <br>
     <div id="replace_content_<?= $postId ?>">
         <div id='post_title_<?= $postId ?>'>
